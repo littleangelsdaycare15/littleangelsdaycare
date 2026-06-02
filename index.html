@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Angels Daycare - Quality Childcare Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: #555;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), 
+                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><circle cx="100" cy="100" r="50" fill="%23fff" opacity="0.1"/><circle cx="1000" cy="300" r="80" fill="%23fff" opacity="0.1"/></svg>');
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #ff5252;
+        }
+
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 2.2em;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #667eea;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .info-section {
+            background-color: #f8f9fa;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .info-box p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            line-height: 2;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #667eea;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            section h2 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>👶 Little Angels Daycare</h1>
+            <p>Safe, Caring, and Nurturing Childcare Services</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Welcome to Little Angels Daycare</h2>
+            <p>Providing exceptional childcare in Koparkhairane, Navi Mumbai</p>
+            <p style="font-size: 1.2em; opacity: 0.9;">Open 24 Hours • Monday to Saturday</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: 0 auto 40px;">
+                Little Angels Daycare is a trusted childcare center dedicated to providing safe, nurturing, and stimulating environments for children. 
+                Our experienced team is committed to supporting your child's growth and development.
+            </p>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🏠 Safe Environment</h3>
+                    <p>Fully secured premises with modern safety features and CCTV monitoring to ensure your child's safety.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👨‍🏫 Experienced Staff</h3>
+                    <p>Our caring and trained professionals provide individual attention and support to every child.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🎨 Learning Activities</h3>
+                    <p>Engaging activities including art, music, play, and educational programs for holistic development.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🥗 Nutritious Meals</h3>
+                    <p>Healthy, balanced meals and snacks prepared with care to meet your child's nutritional needs.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💚 Caring Approach</h3>
+                    <p>We treat every child with love and respect, fostering a warm and welcoming atmosphere.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Parent Updates</h3>
+                    <p>Regular updates and communication to keep parents informed about their child's activities and progress.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>🌅 Full Day Care</h3>
+                    <p>Comprehensive childcare services throughout the day with educational activities, meals, and rest periods.</p>
+                </div>
+                <div class="info-box">
+                    <h3>🌙 24-Hour Services</h3>
+                    <p>Available for extended hours and overnight care to meet the needs of working parents.</p>
+                </div>
+                <div class="info-box">
+                    <h3>👧 Age Groups</h3>
+                    <p>We care for children of all ages with age-appropriate activities and development programs.</p>
+                </div>
+                <div class="info-box">
+                    <h3>🎓 Educational Programs</h3>
+                    <p>Structured learning activities designed to promote cognitive, physical, and social development.</p>
+                </div>
+                <div class="info-box">
+                    <h3>🎉 Special Events</h3>
+                    <p>Birthday celebrations, seasonal festivals, and special activities to create memorable experiences.</p>
+                </div>
+                <div class="info-box">
+                    <h3>📋 Flexible Plans</h3>
+                    <p>Customizable care packages to fit your schedule and budgetary needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>📍 Location</h3>
+                    <p>Koparkhairane<br>Navi Mumbai<br>Maharashtra, India</p>
+                </div>
+                <div class="info-box">
+                    <h3>📞 Phone</h3>
+                    <p><strong>Call us for inquiries and admissions</strong><br>
+                    Available during business hours</p>
+                </div>
+                <div class="info-box">
+                    <h3>⏰ Hours</h3>
+                    <p>Monday to Saturday<br>Open 24 Hours<br><br>Sunday - Closed</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="mailto:info@littleangels.com" class="btn">Send Email</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Little Angels Daycare. All rights reserved.</p>
+            <p>Providing quality childcare services in Koparkhairane, Navi Mumbai</p>
+            <div class="social-links">
+                <p>Follow us on social media for updates</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
