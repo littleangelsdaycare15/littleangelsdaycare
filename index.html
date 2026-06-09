@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Angels Daycare - Quality Childcare Services</title>
+    <title>Little Angels Daycare - 24 Hour Childcare in Vashi</title>
     <style>
         * {
             margin: 0;
@@ -66,8 +66,7 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><circle cx="100" cy="100" r="50" fill="%23fff" opacity="0.1"/><circle cx="1000" cy="300" r="80" fill="%23fff" opacity="0.1"/></svg>');
+            background: linear-gradient(rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
             color: white;
             padding: 100px 20px;
             text-align: center;
@@ -145,6 +144,27 @@
             background-color: #f8f9fa;
         }
 
+        .pricing-highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 40px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .pricing-highlight h3 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        .price-tag {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
         .info-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -163,6 +183,68 @@
             line-height: 1.8;
         }
 
+        .form-section {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 500px;
+            margin: 30px auto;
+        }
+
+        .form-section h3 {
+            color: #667eea;
+            margin-bottom: 25px;
+            font-size: 1.6em;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #764ba2;
+        }
+
         footer {
             background-color: #333;
             color: white;
@@ -173,21 +255,6 @@
 
         footer p {
             margin-bottom: 10px;
-        }
-
-        .contact-info {
-            margin: 20px 0;
-            line-height: 2;
-        }
-
-        .social-links {
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            color: #667eea;
-            text-decoration: none;
-            margin: 0 10px;
         }
 
         @media (max-width: 768px) {
@@ -207,14 +274,18 @@
             section h2 {
                 font-size: 1.8em;
             }
+
+            .form-section {
+                padding: 20px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>👶 Little Angels Daycare</h1>
-            <p>Safe, Caring, and Nurturing Childcare Services</p>
+            <h1>🌟 Little Angels Daycare</h1>
+            <p>24-Hour Quality Childcare in Vashi</p>
         </div>
     </header>
 
@@ -224,6 +295,8 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#enquire">Enquire</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -232,9 +305,9 @@
     <section class="hero" id="home">
         <div class="container">
             <h2>Welcome to Little Angels Daycare</h2>
-            <p>Providing exceptional childcare in Koparkhairane, Navi Mumbai</p>
-            <p style="font-size: 1.2em; opacity: 0.9;">Open 24 Hours • Monday to Saturday</p>
-            <a href="#contact" class="btn">Get in Touch</a>
+            <p>Professional 24-Hour Childcare for Ages 6 Months to 15 Years</p>
+            <p style="font-size: 1.2em; opacity: 0.9;">Located in Vashi • ₹130/Hour</p>
+            <a href="#enquire" class="btn">Send Enquiry</a>
         </div>
     </section>
 
@@ -242,34 +315,34 @@
         <div class="container">
             <h2>About Us</h2>
             <p style="text-align: center; font-size: 1.1em; max-width: 800px; margin: 0 auto 40px;">
-                Little Angels Daycare is a trusted childcare center dedicated to providing safe, nurturing, and stimulating environments for children. 
-                Our experienced team is committed to supporting your child's growth and development.
+                Little Angels Daycare is a trusted home-based childcare service dedicated to providing safe, nurturing, and stimulating environments for children. 
+                Our experienced team is committed to supporting your child's growth and development with love and care.
             </p>
             
             <div class="features">
                 <div class="feature-card">
+                    <h3>❄️ Air Conditioned Comfort</h3>
+                    <p>Our home is fully air-conditioned to ensure your child stays comfortable and safe in all weather conditions.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🕐 24-Hour Service</h3>
+                    <p>Flexible childcare available 24 hours a day, perfect for families with varying work schedules.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>👶 All Ages Welcome</h3>
+                    <p>We care for children from 6 months to 15 years old with age-appropriate activities and attention.</p>
+                </div>
+                <div class="feature-card">
                     <h3>🏠 Safe Environment</h3>
-                    <p>Fully secured premises with modern safety features and CCTV monitoring to ensure your child's safety.</p>
+                    <p>A secure, clean, and welcoming home environment designed for your child's safety and happiness.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>👨‍🏫 Experienced Staff</h3>
-                    <p>Our caring and trained professionals provide individual attention and support to every child.</p>
+                    <h3>💚 Loving Care</h3>
+                    <p>We treat every child with love and respect, fostering a warm and personal atmosphere.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>🎨 Learning Activities</h3>
-                    <p>Engaging activities including art, music, play, and educational programs for holistic development.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>🥗 Nutritious Meals</h3>
-                    <p>Healthy, balanced meals and snacks prepared with care to meet your child's nutritional needs.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>💚 Caring Approach</h3>
-                    <p>We treat every child with love and respect, fostering a warm and welcoming atmosphere.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>📱 Parent Updates</h3>
-                    <p>Regular updates and communication to keep parents informed about their child's activities and progress.</p>
+                    <h3>📱 Parent Communication</h3>
+                    <p>Regular updates and open communication to keep parents informed about their child's activities and progress.</p>
                 </div>
             </div>
         </div>
@@ -285,15 +358,15 @@
                     <p>Comprehensive childcare services throughout the day with educational activities, meals, and rest periods.</p>
                 </div>
                 <div class="info-box">
-                    <h3>🌙 24-Hour Services</h3>
-                    <p>Available for extended hours and overnight care to meet the needs of working parents.</p>
+                    <h3>🌙 Hourly Care</h3>
+                    <p>Flexible hourly childcare services available 24/7 to fit your schedule perfectly.</p>
                 </div>
                 <div class="info-box">
-                    <h3>👧 Age Groups</h3>
-                    <p>We care for children of all ages with age-appropriate activities and development programs.</p>
+                    <h3>🎨 Learning Activities</h3>
+                    <p>Engaging activities including art, music, play, and educational programs for holistic development.</p>
                 </div>
                 <div class="info-box">
-                    <h3>🎓 Educational Programs</h3>
+                    <h3>👧 Age-Appropriate Programs</h3>
                     <p>Structured learning activities designed to promote cognitive, physical, and social development.</p>
                 </div>
                 <div class="info-box">
@@ -308,6 +381,60 @@
         </div>
     </section>
 
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-highlight">
+                <h3>Per Hour Service</h3>
+                <div class="price-tag">₹130/Hour</div>
+                <p>Flexible hourly childcare for all ages (6 months to 15 years)</p>
+                <p style="margin-top: 15px; font-size: 0.95em;">Available 24 hours a day, 7 days a week</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="enquire">
+        <div class="container">
+            <h2>Send Enquiry</h2>
+            <div class="form-section">
+                <h3>Get In Touch</h3>
+                <form id="enquiryForm">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="childAge">Child Age *</label>
+                        <select id="childAge" name="childAge" required>
+                            <option value="">Select child age</option>
+                            <option value="6 months - 1 year">6 months - 1 year</option>
+                            <option value="1-2 years">1-2 years</option>
+                            <option value="2-3 years">2-3 years</option>
+                            <option value="3-5 years">3-5 years</option>
+                            <option value="5-10 years">5-10 years</option>
+                            <option value="10-15 years">10-15 years</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="hours">Required Hours *</label>
+                        <input type="text" id="hours" name="hours" required placeholder="e.g., 4 hours, 8 hours, 24 hours">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
@@ -315,21 +442,21 @@
             <div class="info-grid">
                 <div class="info-box">
                     <h3>📍 Location</h3>
-                    <p>Koparkhairane<br>Navi Mumbai<br>Maharashtra, India</p>
+                    <p>Vashi<br>Navi Mumbai<br>Maharashtra, India</p>
                 </div>
                 <div class="info-box">
                     <h3>📞 Phone</h3>
                     <p><strong>Call us for inquiries and admissions</strong><br>
-                    Available during business hours</p>
+                    <a href="tel:8104201915" style="color: #667eea; text-decoration: none; font-weight: bold;">810-420-1915</a></p>
                 </div>
                 <div class="info-box">
                     <h3>⏰ Hours</h3>
-                    <p>Monday to Saturday<br>Open 24 Hours<br><br>Sunday - Closed</p>
+                    <p>Available 24 Hours<br>7 Days a Week<br><br>Always Open for Your Family</p>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 40px;">
-                <a href="mailto:info@littleangels.com" class="btn">Send Email</a>
+                <a href="tel:8104201915" class="btn">Call Us Now</a>
             </div>
         </div>
     </section>
@@ -337,11 +464,32 @@
     <footer>
         <div class="container">
             <p>&copy; 2026 Little Angels Daycare. All rights reserved.</p>
-            <p>Providing quality childcare services in Koparkhairane, Navi Mumbai</p>
-            <div class="social-links">
-                <p>Follow us on social media for updates</p>
+            <p>Professional Childcare in Vashi • Ages 6 Months to 15 Years • 24-Hour Service • ₹130/Hour</p>
+            <div style="margin-top: 20px;">
+                <p>Contact: 810-420-1915</p>
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const childAge = document.getElementById('childAge').value;
+            const hours = document.getElementById('hours').value;
+            const phone = document.getElementById('phone').value;
+            
+            // Create message for WhatsApp
+            const whatsappMessage = `Hello Little Angels Daycare!%0A%0AName: ${name}%0AChild Age: ${childAge}%0ARequired Hours: ${hours}%0APhone: ${phone}%0A%0APlease contact me soon!`;
+            
+            // Send via WhatsApp
+            window.open(`https://wa.me/918104201915?text=${whatsappMessage}`, '_blank');
+            
+            // Reset form
+            this.reset();
+            alert('Thank you! Your enquiry has been sent. We will contact you soon.');
+        });
+    </script>
 </body>
 </html>
